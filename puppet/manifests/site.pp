@@ -4,3 +4,4 @@ Exec {
 
 include apache2
 include appvisit
+include passenger
