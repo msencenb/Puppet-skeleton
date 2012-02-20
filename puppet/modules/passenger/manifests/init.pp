@@ -3,7 +3,7 @@ class passenger {
     "/usr/local/bin/gem install passenger -v=3.0.9":
       user => root,
       group => root,
-      alias => "install_passenger"
+      alias => "install_passenger",
       before => Exec["passenger_apache_module"],
       unless => "ls /usr/local/lib/ruby/gems/1.9.1/gems/passenger-3.0.9/"
   }
