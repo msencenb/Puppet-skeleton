@@ -8,7 +8,7 @@ Vagrant::Config.run do |config|
 
   # Every Vagrant virtual environment requires a box to build off of.
   #config.vm.box = "base"
-  config.vm.customize ["modifyvm", :id, "--name", "appvisitvm", "--memory", "512"]
+  config.vm.customize ["modifyvm", :id, "--name", "appvisit", "--memory", "512"]
   config.vm.box = "lucid64_with_ruby193"
   config.vm.host_name = "app"
   config.vm.forward_port 22, 2222, :auto => true
